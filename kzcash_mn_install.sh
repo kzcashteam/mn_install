@@ -65,7 +65,7 @@ EOF
 
 sudo systemctl enable kzcash
 sudo systemctl start kzcash
-echo "Pause! Waiting... Booting KZC node and creating keypool"
+echo "Pause! Waiting (100 sec)... Booting KZC node and creating keypool"
 sleep 100
 
 MNGENKEY=`sudo -H -u kzcash /home/kzcash/kzcash-cli masternode genkey`
