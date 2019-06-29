@@ -74,7 +74,7 @@ sudo systemctl restart kzcash
 
 echo "Installing sentinel engine"
 sudo git clone https://github.com/kzcashteam/sentinel.git /home/kzcash/sentinel/
-sudo mkdir /home/kzcash/sentinel/database/
+# sudo mkdir /home/kzcash/sentinel/database/
 sudo chown -R kzcash:kzcash /home/kzcash/sentinel/
 cd /home/kzcash/sentinel/
 sudo -H -u kzcash virtualenv -p python3 ./venv
